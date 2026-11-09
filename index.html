@@ -71,12 +71,24 @@ footer .sig b{font-weight:600;color:#111;white-space:nowrap}
   .mk.membre{width:14px;height:14px}
   footer .sig{flex-direction:column;gap:2px}
 }
-@media (max-width:780px){
+@media (max-width:820px){
+  :root{--first:168px}
+  .row{grid-template-columns:var(--first) repeat(3,minmax(0,1fr)) 30px repeat(3,minmax(0,1fr)) 30px minmax(0,1fr)}
+  .who img{width:34px;height:34px}
+  .who .n{font-size:13px}
+  .who .t{font-size:10.5px}
+  .city{font-size:13px}
+  .date{font-size:10px}
+  .gap{font-size:8px;letter-spacing:0}
+  .mk.chef{width:16px;height:16px}
+  .mk.membre{width:12px;height:12px;box-shadow:0 0 0 2px #fff}
+}
+@media (max-width:680px){
   .wrap{padding:24px 16px 20px}
   h1{font-size:28px}
   .sub{font-size:15px}
-  :root{--first:160px}
-  .grid{min-width:760px}
+  :root{--first:150px}
+  .grid{min-width:700px}
   .hint{display:block;margin-top:-10px}
 }
 </style>
